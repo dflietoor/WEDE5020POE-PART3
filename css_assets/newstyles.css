@@ -1,0 +1,799 @@
+/* =====================================================
+   HOUSE OF DIMP HO
+   External CSS Stylesheet
+   Part 2 - CSS Styling and Responsive Design
+   ===================================================== */
+
+
+/* =====================================================
+   2.2 CSS RESET / BASE STYLES
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+
+/* Responsive images */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =====================================================
+   HEADER
+   ===================================================== */
+
+header {
+    background-color: #f8d7e5;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+/* Logo */
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* =====================================================
+   NAVIGATION
+   ===================================================== */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ol,
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+
+/* Pseudo-class: hover */
+
+nav a:hover {
+    background-color: #b0005a;
+    color: #ffffff;
+}
+
+
+/* Pseudo-class: focus */
+
+nav a:focus {
+    outline: 2px solid #b0005a;
+    outline-offset: 3px;
+}
+
+
+/* Pseudo-class: active */
+
+nav a:active {
+    background-color: #8a0047;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+   ===================================================== */
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+/* =====================================================
+   2.3 TYPOGRAPHY
+   ===================================================== */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #b0005a;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #b0005a;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #8a0047;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+
+/* =====================================================
+   SECTIONS
+   ===================================================== */
+
+section {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   HOME PAGE / HERO SECTION
+   ===================================================== */
+
+main > img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   LISTS
+   ===================================================== */
+
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+
+/* =====================================================
+   SERVICES
+   ===================================================== */
+
+article {
+    background-color: #fce8f0;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #f0b6cf;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Service images */
+
+main img {
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   SERVICE IMAGE GALLERY
+   ===================================================== */
+
+main img[alt*="braids"],
+main img[alt*="Braids"],
+main img[alt*="nails"],
+main img[alt*="Nails"],
+main img[alt*="lashes"],
+main img[alt*="lashes"] {
+    margin: 1rem auto;
+}
+
+
+/* =====================================================
+   LINKS / BUTTONS
+   ===================================================== */
+
+a {
+    color: #b0005a;
+}
+
+main a {
+    display: inline-block;
+    background-color: #b0005a;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+
+/* Hover */
+
+main a:hover {
+    background-color: #8a0047;
+    transform: translateY(-2px);
+}
+
+
+/* Focus */
+
+main a:focus {
+    outline: 2px solid #333333;
+    outline-offset: 3px;
+}
+
+
+/* Active */
+
+main a:active {
+    background-color: #660035;
+}
+
+
+/* =====================================================
+   ENQUIRY / BOOKING FORMS
+   ===================================================== */
+
+form {
+    max-width: 700px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: #fce8f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 0.8rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+
+/* Textarea */
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+
+/* Form focus */
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #b0005a;
+    box-shadow: 0 0 5px rgba(176, 0, 90, 0.3);
+}
+
+
+/* Form button */
+
+button {
+    background-color: #b0005a;
+    color: #ffffff;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Button hover */
+
+button:hover {
+    background-color: #8a0047;
+}
+
+
+/* Button focus */
+
+button:focus {
+    outline: 2px solid #333333;
+    outline-offset: 3px;
+}
+
+
+/* Button active */
+
+button:active {
+    background-color: #660035;
+}
+
+
+/* =====================================================
+   CONTACT PAGE
+   ===================================================== */
+
+address {
+    background-color: #fce8f0;
+    padding: 1.5rem;
+    border-left: 5px solid #b0005a;
+    border-radius: 5px;
+    font-style: normal;
+    margin: 1rem 0;
+}
+
+
+/* =====================================================
+   TABLE - OPERATING HOURS
+   ===================================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: #ffffff;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+th {
+    background-color: #f8d7e5;
+    color: #333333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #fce8f0;
+}
+
+
+/* =====================================================
+   GENERAL HIGHLIGHT SECTION
+   ===================================================== */
+
+section:nth-of-type(even) {
+    background-color: #fce8f0;
+}
+
+
+/* =====================================================
+   2.4 GRID LAYOUT
+   ===================================================== */
+
+/* Service articles */
+
+main {
+    display: block;
+}
+
+
+/* =====================================================
+   2.5 BORDERS / SHADOWS / VISUAL STYLES
+   ===================================================== */
+
+section {
+    border: 1px solid #f0d0dd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+
+footer {
+    background-color: #f8d7e5;
+    color: #333333;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   3.1 TABLET BREAKPOINT
+   Screens 901px and below
+   ===================================================== */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ol,
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    article {
+        padding: 1.2rem;
+    }
+
+}
+
+
+/* =====================================================
+   3.1 MOBILE BREAKPOINT
+   Screens 600px and below
+   ===================================================== */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    nav ol,
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        width: 94%;
+        padding: 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    article {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1rem;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 0.5rem;
+    }
+
+    main > img,
+    .hero-image {
+        max-height: 250px;
+    }
+
+}
+
+
+/*For small devices */
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 0.8rem;
+    }
+
+}
+
+/*PART 3- POE*/
+/*allows pictures to be placed in a grid format*/
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-image {
+    width: 100%;
+    max-width: 180px;
+    height: 220px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.service-card p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/*turns a picture into a bullet*/
+.icon-list {
+  list-style: none;  
+  padding-left: 0;
+}
+
+.icon-list li i {
+  font-size: 0.5em;       
+  vertical-align: middle; 
+  margin-right: 8px;     
+  color: #333;
+}
+
+/* FAQ SECTION */
+
+.faq-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+}
+
+/* FAQ QUESTION BUTTON */
+
+.faq-question {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border: 1px solid #db5dad;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333333;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* QUESTION HOVER EFFECT */
+
+.faq-question:hover {
+    background-color: #fce4f0;
+}
+
+/* KEYBOARD FOCUS */
+
+.faq-question:focus-visible {
+    outline: 3px solid #9d174d;
+    outline-offset: 3px;
+}
+
+/* FAQ ANSWER */
+
+.faq-answer {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-left: 3px solid #db5dad;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .faq-section {
+        padding: 1rem;
+    }
+
+    .faq-question {
+        font-size: 0.95rem;
+    }
+
+}
+.service-search {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.service-search input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.service-card[hidden] {
+    display: none;
+}
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.location-section {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.location-section iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
