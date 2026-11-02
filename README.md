@@ -7,7 +7,7 @@ House Of Dimpho is a beauty parlour based in Pretoria CBD, South Africa. This we
 
 The purpose of Part 3 is to improve the website created in Part 2 by adding JavaScript functionality, form validation, search features, SEO improvements, and deployment.
 
-## 2. Website Pages
+## Website Pages
 The website consists of the following pages:
 - **Home (index.html):** Introduces House Of Dimpho and its beauty services.
 - **About Us (about.html):** Describes the business, its background, mission, vision, and values.
@@ -15,7 +15,7 @@ The website consists of the following pages:
 - **Enquiries (enquiries.html):** Allows visitors to ask questions about services and to make future bookings.
 - **Contact (contact.html):** Provides contact information, a contact form, and location details.
 
-## 3. Technologies Used
+## Technologies Used
 - HTML5: used for website structure and content.
 - CSS: for styling, layout, responsiveness, and transitions of the website.
 - JavaScript: interactive features, DOM manipulation, search, and form validation.
@@ -58,23 +58,18 @@ Local SEO improvements include consistent business name, address, and contact in
 
 The website uses responsive CSS to support desktop, tablet, and mobile screen sizes. Images scale to fit their containers, and interactive elements include accessible labels and keyboard support where applicable.
 
-## 7. Project Structure
-
-```text
+## Project Structure
 HouseOfDimpho/
-├── index.html
-├── about.html
-├── services.html
-├── enquiries.html
-├── contact.html
-├── css/
-│   └── mystyles.css
-├── js/
-│   └── script.js
-├── _images/
-├── robots.txt
-├├── sitemap.xml
-└── README.md
+ index.html
+about.html
+services.html
+enquiries.html
+contact.html
+css/ mystyles.css
+js/script.js
+_images/
+robots.txt
+sitemap.xml
 
 ### Part 3
 - Added JavaScript interactive features.
@@ -84,10 +79,6 @@ HouseOfDimpho/
 - Added HTML5 and JavaScript form validation.
 - Improved SEO metadata and page structure.
 Adding these features make the website to be user friendly and interactive
-
-### Part 2 Feedback
-- [Record the lecturer's specific feedback here.]
-- [Describe the changes made in response to that feedback.]
 
 ## References
 - MDN Web Docs – JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
