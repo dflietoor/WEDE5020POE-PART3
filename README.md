@@ -20,7 +20,7 @@ The website consists of the following pages:
 - CSS: for styling, layout, responsiveness, and transitions of the website.
 - JavaScript: interactive features, DOM manipulation, search, and form validation.
 - Visual Studio Code: this was used to draft and edit code.
-- GitHub – version control and project hosting.
+- GitHub: version control and project hosting.
 
 ## Part 3 Features
 ### JavaScript Interactivity
